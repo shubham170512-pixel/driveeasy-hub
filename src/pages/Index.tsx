@@ -49,7 +49,7 @@ const Index = () => (
         </div>
 
         {/* Booking form */}
-        <div className="glass-card rounded-xl p-6 max-w-4xl bg-white/10 backdrop-blur-lg border border-white/20">
+        <div className="glass-card rounded-xl p-6 max-w-4xl backdrop-blur-lg border border-white/20 bg-popover-foreground">
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div>
               <label className="text-xs font-medium text-white/60 mb-1.5 block">Pickup Location</label>
