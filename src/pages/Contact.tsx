@@ -46,9 +46,9 @@ const Contact = () => {
           <div className="space-y-6">
             <div className="space-y-4">
               {[
-                { icon: Phone, label: "+91 123 456 7890", href: "tel:+911234567890" },
+                { icon: Phone, label: "+91 70280 49371", href: "tel:+917028049371" },
                 { icon: Mail, label: "info@driveeasytravels.com", href: "mailto:info@driveeasytravels.com" },
-                { icon: MapPin, label: "123 MG Road, Bangalore, Karnataka 560001", href: "#" },
+                { icon: MapPin, label: "Pimpri Chinchwad, Pune, Maharashtra 411018", href: "#" },
               ].map((item) => (
                 <a key={item.label} href={item.href} className="flex items-center gap-3 text-sm hover:text-primary transition-colors">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
@@ -62,7 +62,7 @@ const Contact = () => {
             <div className="rounded-lg overflow-hidden border border-border h-64">
               <iframe
                 title="DriveEasy Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzE4LjAiTiA3N8KwMzUnMzguNiJF!5e0!3m2!1sen!2sin!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60579.0!2d73.7898!3d18.6279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9e76c8fa205%3A0x1b8d02e26d8e2e4e!2sPimpri-Chinchwad%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
