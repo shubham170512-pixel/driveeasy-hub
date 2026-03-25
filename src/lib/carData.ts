@@ -41,9 +41,9 @@ export const cars: Car[] = [
   },
   {
     id: "3",
-    name: "Toyota Innova",
+    name: "Toyota Innova Crysta",
     type: "SUV",
-    image: carSuv,
+    image: carInnovaCrysta,
     seats: 7,
     pricePerKm: 18,
     pricePerDay: 3500,
