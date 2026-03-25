@@ -2,6 +2,7 @@ import carSedan from "@/assets/car-sedan.jpg";
 import carSuv from "@/assets/car-suv.jpg";
 import carHatchback from "@/assets/car-hatchback.jpg";
 import carLuxury from "@/assets/car-luxury.jpg";
+import carInnovaCrysta from "@/assets/car-innova-crysta.jpg";
 
 export interface Car {
   id: string;
@@ -40,9 +41,9 @@ export const cars: Car[] = [
   },
   {
     id: "3",
-    name: "Toyota Innova",
+    name: "Toyota Innova Crysta",
     type: "SUV",
-    image: carSuv,
+    image: carInnovaCrysta,
     seats: 7,
     pricePerKm: 18,
     pricePerDay: 3500,
