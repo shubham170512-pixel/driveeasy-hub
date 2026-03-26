@@ -72,7 +72,7 @@ export const cars: Car[] = [
     pricePerKm: 15,
     pricePerDay: 2800,
     ac: true,
-    features: ["AC", "Music System", "GPS", "7 Seats"],
+    features: ["AC", "Music System", "GPS", "4 Seats"],
   },
   {
     id: "6",
