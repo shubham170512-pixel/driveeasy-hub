@@ -66,9 +66,9 @@ export const cars: Car[] = [
   {
     id: "5",
     name: "Hyundai Aura",
-    type: "SUV",
-    image: carErtiga,
-    seats: 7,
+    type: "Sedan",
+    image: carSedan,
+    seats: 4,
     pricePerKm: 15,
     pricePerDay: 2800,
     ac: true,
