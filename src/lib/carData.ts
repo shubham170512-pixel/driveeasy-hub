@@ -1,6 +1,7 @@
 import carSedan from "@/assets/car-sedan.jpg";
 import carSuv from "@/assets/car-suv.jpg";
 import carHatchback from "@/assets/car-hatchback.jpg";
+import carErtiga from "@/assets/car-ertiga.jpg";
 import carLuxury from "@/assets/car-luxury.jpg";
 import carInnovaCrysta from "@/assets/car-innova-crysta.jpg";
 import carXuv700 from "@/assets/car-xuv700.jpg";
@@ -64,14 +65,14 @@ export const cars: Car[] = [
   },
   {
     id: "5",
-    name: "Maruti Swift",
-    type: "Hatchback",
-    image: carHatchback,
-    seats: 4,
-    pricePerKm: 9,
-    pricePerDay: 1500,
+    name: "Maruti Ertiga",
+    type: "SUV",
+    image: carErtiga,
+    seats: 7,
+    pricePerKm: 15,
+    pricePerDay: 2800,
     ac: true,
-    features: ["AC", "Music System", "4 Seats"],
+    features: ["AC", "Music System", "GPS", "7 Seats"],
   },
   {
     id: "6",
