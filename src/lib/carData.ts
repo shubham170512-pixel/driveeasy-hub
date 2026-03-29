@@ -26,7 +26,7 @@ export const cars: Car[] = [
     id: "1",
     name: "Toyota Etios",
     type: "Sedan",
-    image: carSedan,
+    image: carEtios,
     seats: 4,
     pricePerKm: 12,
     pricePerDay: 2200,
