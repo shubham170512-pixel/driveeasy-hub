@@ -47,7 +47,7 @@ const Contact = () => {
             <div className="space-y-4">
               {[
                 { icon: Phone, label: "+91 90757 44097", href: "tel:+919075744097" },
-                { icon: Mail, label: "info@driveeasytravels.com", href: "mailto:info@driveeasytravels.com" },
+                { icon: Mail, label: "driveeasy0317@gmail.com", href: "mailto:driveeasy0317@gmail.com" },
                 { icon: MapPin, label: "Pimpri Chinchwad, Pune, Maharashtra 411018", href: "#" },
               ].map((item) => (
                 <a key={item.label} href={item.href} className="flex items-center gap-3 text-sm hover:text-primary transition-colors">
