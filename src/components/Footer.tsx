@@ -47,7 +47,7 @@ const Footer = () => (
               <Mail className="w-4 h-4" /> info@driveeasytravels.com
             </a>
             <span className="flex items-start gap-2">
-              <MapPin className="w-4 h-4 mt-0.5 shrink-0" /> 123 MG Road, Bangalore, India
+              <MapPin className="w-4 h-4 mt-0.5 shrink-0" /> Gatha mandir, Dehugaon, Pune-412109.
             </span>
           </div>
         </div>
