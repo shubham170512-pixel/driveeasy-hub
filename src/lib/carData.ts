@@ -1,4 +1,5 @@
 import carSedan from "@/assets/car-sedan.jpg";
+import carEtios from "@/assets/car-etios.jpg";
 import carSuv from "@/assets/car-suv.jpg";
 import carHatchback from "@/assets/car-hatchback.jpg";
 import carI20 from "@/assets/car-i20.jpg";
@@ -25,7 +26,7 @@ export const cars: Car[] = [
     id: "1",
     name: "Toyota Etios",
     type: "Sedan",
-    image: carSedan,
+    image: carEtios,
     seats: 4,
     pricePerKm: 12,
     pricePerDay: 2200,
