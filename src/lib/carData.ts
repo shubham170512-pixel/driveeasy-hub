@@ -1,6 +1,7 @@
 import carSedan from "@/assets/car-sedan.jpg";
 import carSuv from "@/assets/car-suv.jpg";
 import carHatchback from "@/assets/car-hatchback.jpg";
+import carI20 from "@/assets/car-i20.jpg";
 import carHyundaiAura from "@/assets/car-hyundai-aura.jpg";
 import carLuxury from "@/assets/car-luxury.jpg";
 import carBmw5Series from "@/assets/car-bmw-5series.jpg";
