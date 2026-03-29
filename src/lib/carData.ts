@@ -3,6 +3,7 @@ import carSuv from "@/assets/car-suv.jpg";
 import carHatchback from "@/assets/car-hatchback.jpg";
 import carHyundaiAura from "@/assets/car-hyundai-aura.jpg";
 import carLuxury from "@/assets/car-luxury.jpg";
+import carBmw5Series from "@/assets/car-bmw-5series.jpg";
 import carInnovaCrysta from "@/assets/car-innova-crysta.jpg";
 import carXuv700 from "@/assets/car-xuv700.jpg";
 
@@ -100,7 +101,7 @@ export const cars: Car[] = [
     id: "8",
     name: "BMW 5 Series",
     type: "Luxury",
-    image: carLuxury,
+    image: carBmw5Series,
     seats: 4,
     pricePerKm: 40,
     pricePerDay: 9500,
