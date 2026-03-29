@@ -40,7 +40,7 @@ const Footer = () => (
         <div>
           <h4 className="font-display font-semibold mb-4">Contact Info</h4>
           <div className="flex flex-col gap-3 text-sm text-accent-foreground/60">
-            <a href="tel:+919075744097" className="flex items-center gap-2 hover:text-primary transition-colors">
+            <a href="tel:+91 9075744097" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Phone className="w-4 h-4" /> +91 90757 44097
             </a>
             <a href="mailto:info@driveeasytravels.com" className="flex items-center gap-2 hover:text-primary transition-colors">
