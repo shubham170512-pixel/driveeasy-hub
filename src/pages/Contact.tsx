@@ -46,7 +46,7 @@ const Contact = () => {
           <div className="space-y-6">
             <div className="space-y-4">
               {[
-                { icon: Phone, label: "+91 70280 49371", href: "tel:+917028049371" },
+                { icon: Phone, label: "+91 90757 44097", href: "tel:+919075744097" },
                 { icon: Mail, label: "info@driveeasytravels.com", href: "mailto:info@driveeasytravels.com" },
                 { icon: MapPin, label: "Pimpri Chinchwad, Pune, Maharashtra 411018", href: "#" },
               ].map((item) => (
