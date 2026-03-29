@@ -43,8 +43,8 @@ const Footer = () => (
             <a href="tel:+91 9075744097" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Phone className="w-4 h-4" /> +91 90757 44097
             </a>
-            <a href="mailto:info@driveeasytravels.com" className="flex items-center gap-2 hover:text-primary transition-colors">
-              <Mail className="w-4 h-4" /> info@driveeasytravels.com
+            <a href="mailto:driveeasy0317@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <Mail className="w-4 h-4" /> driveeasy0317@gmail.com
             </a>
             <span className="flex items-start gap-2">
               <MapPin className="w-4 h-4 mt-0.5 shrink-0" /> Gatha mandir, Dehugaon, Pune-412109.
