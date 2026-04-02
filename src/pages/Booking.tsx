@@ -12,6 +12,7 @@ const Booking = () => {
   const car = cars.find((c) => c.id === carId);
 
   const [step, setStep] = useState(1);
+  const [confirming, setConfirming] = useState(false);
   const [form, setForm] = useState({
     name: "",
     phone: "",
@@ -36,7 +37,6 @@ const Booking = () => {
   const distanceNum = Number(form.distance) || 0;
   const fare = distanceNum * car.pricePerKm;
 
-  const [confirming, setConfirming] = useState(false);
 
   const handleConfirm = async () => {
     if (!form.name || !form.phone || !form.pickup || !form.date || !form.distance) {
