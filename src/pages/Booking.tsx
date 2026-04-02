@@ -36,13 +36,35 @@ const Booking = () => {
   const distanceNum = Number(form.distance) || 0;
   const fare = distanceNum * car.pricePerKm;
 
-  const handleConfirm = () => {
+  const [confirming, setConfirming] = useState(false);
+
+  const handleConfirm = async () => {
     if (!form.name || !form.phone || !form.pickup || !form.date || !form.distance) {
       toast.error("Please fill in all required fields.");
       return;
     }
-    setStep(3);
-    toast.success("Booking confirmed! We'll contact you shortly.");
+    setConfirming(true);
+    try {
+      const { error } = await supabase.from("bookings").insert({
+        car_id: car.id,
+        car_name: car.name,
+        name: form.name,
+        phone: form.phone,
+        email: form.email || null,
+        pickup: form.pickup,
+        drop_location: form.drop || null,
+        trip_date: form.date,
+        distance: distanceNum,
+        fare,
+      });
+      if (error) throw error;
+      setStep(3);
+      toast.success("Booking confirmed! We'll contact you shortly.");
+    } catch {
+      toast.error("Something went wrong. Please try again.");
+    } finally {
+      setConfirming(false);
+    }
   };
 
   return (
