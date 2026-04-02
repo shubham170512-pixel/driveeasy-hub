@@ -4,18 +4,34 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name || !form.email || !form.message) {
       toast.error("Please fill in all fields.");
       return;
     }
-    toast.success("Message sent! We'll get back to you soon.");
-    setForm({ name: "", email: "", message: "" });
+    setLoading(true);
+    try {
+      const { error } = await supabase.from("contact_submissions").insert({
+        name: form.name,
+        email: form.email,
+        message: form.message,
+      });
+      if (error) throw error;
+      toast.success("Message sent! We'll get back to you soon.");
+      setForm({ name: "", email: "", message: "" });
+    } catch {
+      toast.error("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -39,7 +55,7 @@ const Contact = () => {
               <label className="text-sm font-medium mb-1.5 block">Message</label>
               <Textarea value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} placeholder="How can we help?" rows={5} />
             </div>
-            <Button type="submit" size="lg">Send Message</Button>
+            <Button type="submit" size="lg" disabled={loading}>{loading ? "Sending..." : "Send Message"}</Button>
           </form>
 
           {/* Info + Map */}
