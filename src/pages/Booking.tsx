@@ -173,7 +173,7 @@ const Booking = () => {
             </div>
             <div className="flex gap-3">
               <Button variant="outline" onClick={() => setStep(1)}>Back</Button>
-              <Button size="lg" onClick={handleConfirm}>Confirm Booking</Button>
+              <Button size="lg" onClick={handleConfirm} disabled={confirming}>{confirming ? "Confirming..." : "Confirm Booking"}</Button>
             </div>
           </div>
         )}
