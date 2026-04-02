@@ -55,7 +55,7 @@ const Contact = () => {
               <label className="text-sm font-medium mb-1.5 block">Message</label>
               <Textarea value={form.message} onChange={(e) => setForm({ ...form, message: e.target.value })} placeholder="How can we help?" rows={5} />
             </div>
-            <Button type="submit" size="lg">Send Message</Button>
+            <Button type="submit" size="lg" disabled={loading}>{loading ? "Sending..." : "Send Message"}</Button>
           </form>
 
           {/* Info + Map */}
