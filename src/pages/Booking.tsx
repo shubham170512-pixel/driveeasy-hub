@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { cars } from "@/lib/carData";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
 const Booking = () => {
   const { carId } = useParams();
